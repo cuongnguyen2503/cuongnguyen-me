@@ -12,5 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require TweenMax.min
+//= require jquery.touchSwipe.min
+//= require jquery.carouFredSel-6.2.1-packed
+//= require modernizr.custom.63321
+//= require jquery.dropdownit
+//= require jquery.stellar.min
+//= require ScrollToPlugin.min
+//= require bootstrap.min
+//= require jquery.mixitup.min
+//= require masonry.min
+//= require perfect-scrollbar-0.4.5.with-mousewheel.min
+//= require magnific-popup
+//= require custom
+//= require custom-style
