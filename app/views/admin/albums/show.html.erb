@@ -1,0 +1,19 @@
+<div class="section-container">
+  <ul id="grid" class="grid">
+    <% @album.images.each do |img| %>
+      <li>
+        <div>
+          <%= image_tag img.name.medium.url, alt: "image" %>
+          <a href=<%= img.name.url %> class="popup-with-move-anim">
+            <div class="over">
+              <div class="comein">
+                <i class="fa fa-search"></i>
+                <div class="comein-bg"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

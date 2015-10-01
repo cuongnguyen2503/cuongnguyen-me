@@ -1,0 +1,19 @@
+<div class="content">
+  <%= nested_form_for [:admin, @album], html: {multipart: true} do |f| %>
+    <%= f.text_field :name %>
+
+    <table id="images">
+      <%= f.fields_for :images, :wrapper => false do |image| %>
+        <tr class="fields">
+          <td><%= image.file_field :name %></td>
+          <td><%= image.link_to_remove "Remove image" %></td>
+        </tr>
+      <% end %>
+    </table>
+    <p><%= f.link_to_add "Add a image", :images, :data => { :target => "#images" } %></p>
+
+    <div class="submit-button">
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

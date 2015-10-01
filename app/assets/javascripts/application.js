@@ -25,4 +25,4 @@
 //= require perfect-scrollbar-0.4.5.with-mousewheel.min
 //= require magnific-popup
 //= require custom
-//= require custom-style
+//= require jquery_nested_form
