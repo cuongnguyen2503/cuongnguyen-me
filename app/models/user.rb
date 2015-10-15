@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :albums, dependent: :destroy
+
+  enum role: [:admin, :normal]
 end
